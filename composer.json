@@ -1,7 +1,7 @@
  {
-    "name": "baidouabdellah/cmi-payment-gateway",
+    "name": "alouspike/cmi-payment-gateway",
     "description": "Laravel package to integrate with the CMI payment gateway",
-    "version": "1.0.3",
+    "version": "1.0.3-beta",
     "keywords": ["laravel", "payment", "gateway", "CMI", "integration"],
     "homepage": "https://github.com/baidouabdellah/cmi-payment-gateway",
     "license": "MIT",
@@ -13,7 +13,6 @@
         }
     ],
     "require": {
-        "php": "^8.1",
         "php": "^7.4|^8.0|^8.1|^8.2",
         "spatie/laravel-package-tools": "^1.9.2",
         "illuminate/support": "^7.4|^7.5|^8.0|^9.0|^10.0|^11.0",
@@ -58,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Baidouabdellah\\CmiPaymentGateway\\CmiServiceProvider"
+                "Baidouabdellah\\CmiPaymentGateway\\CmiPaymentServiceProvider"
             ],
             "aliases": {
-                "Cmi": "Baidouabdellah\\CmiPaymentGateway\\Facades\\Cmi"
+                "Cmi": "Baidouabdellah\\CmiPaymentGateway\\CmiPayment"
             }
         }
     },
